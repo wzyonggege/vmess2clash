@@ -1,0 +1,8 @@
+version: "3.8"
+services:
+  vmess2clash:
+    build: .
+    ports:
+      - "5001:5000"
+    volumes:
+      - .:/vmess2clash

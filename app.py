@@ -1,12 +1,8 @@
-# -*- coding: utf-8 -*-
-
-import requests
 import base64
 import json
 import yaml
 from flask import Flask
 from flask import request
-
 
 def get_vmess(vmess_content):
     """
@@ -143,4 +139,4 @@ def hello():
 
 
 if __name__ == "__main__":
-    app.run(port=8080)
+    app.run(port=5000, host='0.0.0.0')
